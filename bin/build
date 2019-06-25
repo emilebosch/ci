@@ -1,0 +1,6 @@
+set -e
+for i in ci/* ; do
+  if [ -d "$i" ]; then
+  	docker build -t "$i" "$i"
+  fi
+done

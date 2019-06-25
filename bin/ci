@@ -1,0 +1,2 @@
+# TODO Fix
+docker run --rm -v `pwd`/docs:/docs -v settings:/settings -v `pwd`:/app ci/$1

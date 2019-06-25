@@ -1,0 +1,5 @@
+for i in $(dirname "$0")/../ci/* ; do
+  if [ -d "$i" ]; then
+	docker run --rm -v docs:/docs -v settings:/settings -v `pwd`:/app ci/$(basename "$i")
+  fi
+done

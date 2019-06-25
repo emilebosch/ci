@@ -1,0 +1,7 @@
+type Lol {
+	name: String!
+}
+
+type Query {
+	lol: Lol
+}
