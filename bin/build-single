@@ -1,6 +1,7 @@
-for i in ci/* ; do
+set -e
+for i in ci/$1 ; do
   if [ -d "$i" ]; then
     echo docker build -t "$i" "$i"
-    docker build -t "$i" "$i"
+  	docker build -t "$i" "$i"
   fi
 done

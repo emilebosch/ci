@@ -1,4 +1,4 @@
 FROM node:alpine
 WORKDIR /app
-RUN npm install --global leasot@next
+RUN npm install --global leasot
 CMD ["/usr/local/bin/leasot","-S","."]

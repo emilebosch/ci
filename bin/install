@@ -1,0 +1,6 @@
+mkdir -p ~/.ci/
+cp ./bin/ci ~/.ci/
+echo "" >> ~/.bash_profile
+echo "export PATH=\$PATH:~/.ci/ #<3 from Ci!" >> ~/.bash_profile
+echo "Now run: source ~/.bash_profile"
+
